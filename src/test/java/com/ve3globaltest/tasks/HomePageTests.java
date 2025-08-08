@@ -4,35 +4,36 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.datadriventesting.DataProviders;
 import com.ve3globaltest.base.TestBase;
 import com.ve3globaltest.pages.Homepage;
+import com.ve3globaltest.pages.LoginPage;
 
 public class HomePageTests extends TestBase {
 	/**
-	 * This method Verifies that the Ve3.global homepage loads successfully.
+	 * Verifies that the homepage loads successfully after a valid login.
+	 * 
+	 * Objective: Ensure the homepage loads successfully after a valid login
+	 * 
+	 * Action:
+	 * - Perform login using valid credentials.
+	 * - Assert that the homepage is displayed.
+	 * 
+	 * Approach:Used Data-Driven Testing for Username and Password input to validate
+	 * multiple credential sets.
 	 */
-	@Test
-	public void verifyHomepageLoadsSucessfully() {
+	@Test(dataProvider = "validCredentials", dataProviderClass = DataProviders.class)
+	public void verifyHomepageLoadsAfterValidLogin(String username, String password) {
+	LoginPage loginpage = PageFactory.initElements(driver, LoginPage.class);
+	loginpage.enterUserName(username);
+	loginpage.enterPassword(password);
+	loginpage.clickOnLogin();
 	Homepage homepage = PageFactory.initElements(driver, Homepage.class);
-	String title = homepage.getHomePageTitle();
-	homepage.clickOnAllowCookies();
-	Assert.assertTrue(title.contains("VE3 - Value") , "Homepage did not load Sucessfully");
-	
+	String homePageUrl = homepage.getHomePageUrl();
+	Assert.assertTrue(homePageUrl.contains("inventory.html"), "HomePage is not Loaded");
 	}
 	
-	
-	/**
-	 * Perform a search using the search bar and verify that search results are displayed
-	 */
-	@Test
-	public void verifySearchFunctionalityDisplaysResults() {
-		Homepage homepage = PageFactory.initElements(driver, Homepage.class);
-		homepage.clickOnAllowCookies();
-		homepage.clickOnSearchBtn();
-		homepage.clickOnSearchInputbox();
-		homepage.sendDataOnSearchBar("SAP");
-		homepage.clickEnterKey();
-	}
+
 	
 	
 		

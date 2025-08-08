@@ -6,7 +6,8 @@
       <class name="com.ve3globaltest.tasks.HomePageTests">
         <methods>
           <include name="launchBrowser"/>
-          <include name="verifySearchFunctionalityDisplaysResults"/>
+          <include name="tearDown"/>
+          <include name="verifyHomepageLoadsAfterValidLogin"/>
         </methods>
       </class> <!-- com.ve3globaltest.tasks.HomePageTests -->
     </classes>
