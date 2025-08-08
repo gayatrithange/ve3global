@@ -6,8 +6,7 @@
       <class name="com.ve3globaltest.tasks.HomePageTests">
         <methods>
           <include name="launchBrowser"/>
-          <include name="tearDown"/>
-          <include name="verifyHomepageLoadsAfterValidLogin"/>
+          <include name="validateCartFunctionality"/>
         </methods>
       </class> <!-- com.ve3globaltest.tasks.HomePageTests -->
     </classes>

@@ -32,9 +32,10 @@ public class TestBase {
 		driver.manage().window().maximize();
 	}
 	
-	@AfterMethod
+	/*
+	 * @AfterMethod
 	public void tearDown() {
 		driver.quit();
-	}
+	}*/
 
 }
