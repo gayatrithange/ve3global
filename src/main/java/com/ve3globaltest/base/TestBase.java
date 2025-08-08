@@ -13,16 +13,16 @@ import com.utils.ApplicationUtil;
 
 public class TestBase {
 	public static RemoteWebDriver driver = null;
-	
+
 	@BeforeMethod
 	public void launchBrowser() {
-		switch((ApplicationUtil.getBrowserName()).toLowerCase()) {
+		switch ((ApplicationUtil.getBrowserName()).toLowerCase()) {
 		case "chrome":
-			 driver = new ChromeDriver();
+			driver = new ChromeDriver();
 			break;
 		case "safari":
 			driver = new SafariDriver();
-            break;
+			break;
 		case "firefox":
 			driver = new FirefoxDriver();
 			break;
@@ -31,11 +31,10 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 	}
-	
-	/*
-	 * @AfterMethod
+
+	@AfterMethod
 	public void tearDown() {
 		driver.quit();
-	}*/
+	}
 
 }
