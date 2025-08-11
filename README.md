@@ -34,5 +34,5 @@ This is a Selenium WebDriver based automation framework built with Java, TestNG,
 4. Run All Tests using Maven:
    mvn clean test
 
-5. View allure report
+5. View allure report: 
    allure serve allure-results
