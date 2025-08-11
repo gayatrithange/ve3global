@@ -1,14 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.99 s <<< FAILURE! -- in TestSuite
-com.ve3globaltest.tasks.ProductCheckOutFlow.validateCheckoutFunctionality -- Time elapsed: 0.521 s <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.68 s <<< FAILURE! -- in TestSuite
+com.ve3globaltest.tasks.ProductCheckOutFlow.validateCheckoutFunctionality -- Time elapsed: 0.514 s <<< FAILURE!
 java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertTrue(Assert.java:57)
 	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.ve3globaltest.tasks.ProductCheckOutFlow.validateCheckoutFunctionality(ProductCheckOutFlow.java:88)
+	at com.ve3globaltest.tasks.ProductCheckOutFlow.validateCheckoutFunctionality(ProductCheckOutFlow.java:87)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)

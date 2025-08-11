@@ -5,18 +5,16 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import java.util.List;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.listeners.TestAllureListener;
 import com.ve3globaltest.base.TestBase;
 import com.ve3globaltest.pages.CartPage;
 import com.ve3globaltest.pages.CheckoutPage;
 import com.ve3globaltest.pages.Homepage;
 import com.ve3globaltest.pages.LoginPage;
 
-@Listeners(TestAllureListener.class)
+@Listeners(com.listeners.TestAllureListener.class)
 public class ProductCheckOutFlow extends TestBase {
 
 	/**

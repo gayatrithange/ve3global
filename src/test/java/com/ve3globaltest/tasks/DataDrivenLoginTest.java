@@ -1,6 +1,6 @@
 package com.ve3globaltest.tasks;
 
-import java.lang.reflect.Method;
+
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -9,13 +9,12 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.datadriventesting.DataProviders;
-import com.listeners.TestAllureListener;
 import com.utils.ApplicationUtil;
 import com.ve3globaltest.base.TestBase;
 import com.ve3globaltest.pages.Homepage;
 import com.ve3globaltest.pages.LoginPage;
 
-@Listeners(TestAllureListener.class)
+@Listeners(com.listeners.TestAllureListener.class)
 public class DataDrivenLoginTest extends TestBase{
 	
 	@BeforeMethod(alwaysRun = true)
