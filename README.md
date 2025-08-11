@@ -3,6 +3,10 @@
 ## Overview
 This is a Selenium WebDriver based automation framework built with Java, TestNG, ApachePOI, following the Page Object Model (POM) design pattern. It supports data-driven testing using Excel file and generates reports using Allure.
 
+## Test Plan
+The detailed test plan document is available in the project directory at:  
+'src/test/resources/documents/SauceDemo_Test_Plan.xlsx'
+
 ## Tech Stack 
 - Automation Tool : Selenium WebDriver
 - Testing Framework: TestNG
