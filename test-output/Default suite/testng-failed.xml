@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ve3globaltest.tasks.HomePageTests">
+      <class name="com.ve3globaltest.tasks.DataDrivenLoginTest">
         <methods>
           <include name="launchBrowser"/>
-          <include name="validateCartFunctionality"/>
+          <include name="verifyHomepageLoadsAfterValidLogin" invocation-numbers="1 2"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.ve3globaltest.tasks.HomePageTests -->
+      </class> <!-- com.ve3globaltest.tasks.DataDrivenLoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

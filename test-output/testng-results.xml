@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-08T23:55:43 IST" name="Default suite" finished-at="2025-08-08T23:55:48 IST" duration-ms="4504">
+  <suite started-at="2025-08-10T18:23:42 IST" name="Default suite" finished-at="2025-08-10T18:23:49 IST" duration-ms="6232">
     <groups>
     </groups>
-    <test started-at="2025-08-08T23:55:43 IST" name="Default test" finished-at="2025-08-08T23:55:48 IST" duration-ms="4504">
-      <class name="com.ve3globaltest.tasks.HomePageTests">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.ve3globaltest.tasks.HomePageTests@46d59067]" started-at="2025-08-08T23:55:43 IST" name="launchBrowser" finished-at="2025-08-08T23:55:45 IST" duration-ms="1755" status="PASS">
+    <test started-at="2025-08-10T18:23:42 IST" name="Default test" finished-at="2025-08-10T18:23:49 IST" duration-ms="6232">
+      <class name="com.ve3globaltest.tasks.ProductCheckOutFlow">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.ve3globaltest.tasks.ProductCheckOutFlow@3bcd05cb]" started-at="2025-08-10T18:23:42 IST" name="launchBrowser" finished-at="2025-08-10T18:23:44 IST" duration-ms="1822" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="validateCartFunctionality()[pri:0, instance:com.ve3globaltest.tasks.HomePageTests@46d59067]" started-at="2025-08-08T23:55:45 IST" name="validateCartFunctionality" finished-at="2025-08-08T23:55:48 IST" duration-ms="2665" status="PASS">
+        <test-method signature="verifyProductFilterPriceLowToHigh()[pri:0, instance:com.ve3globaltest.tasks.ProductCheckOutFlow@3bcd05cb]" started-at="2025-08-10T18:23:44 IST" name="verifyProductFilterPriceLowToHigh" finished-at="2025-08-10T18:23:45 IST" duration-ms="1069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductFilterPriceLowToHigh -->
+        <test-method signature="validateCartFunctionality()[pri:0, instance:com.ve3globaltest.tasks.ProductCheckOutFlow@3bcd05cb]" started-at="2025-08-10T18:23:45 IST" name="validateCartFunctionality" finished-at="2025-08-10T18:23:46 IST" depends-on-methods="com.ve3globaltest.tasks.ProductCheckOutFlow.verifyProductFilterPriceLowToHigh" duration-ms="448" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCartFunctionality -->
-      </class> <!-- com.ve3globaltest.tasks.HomePageTests -->
+        <test-method signature="validateCheckoutFunctionality()[pri:0, instance:com.ve3globaltest.tasks.ProductCheckOutFlow@3bcd05cb]" started-at="2025-08-10T18:23:46 IST" name="validateCheckoutFunctionality" finished-at="2025-08-10T18:23:48 IST" depends-on-methods="com.ve3globaltest.tasks.ProductCheckOutFlow.validateCartFunctionality" duration-ms="2756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCheckoutFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ve3globaltest.tasks.ProductCheckOutFlow@3bcd05cb]" started-at="2025-08-10T18:23:48 IST" name="tearDown" finished-at="2025-08-10T18:23:49 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ve3globaltest.tasks.ProductCheckOutFlow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

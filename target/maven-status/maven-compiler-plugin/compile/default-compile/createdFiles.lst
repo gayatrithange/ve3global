@@ -1,0 +1,11 @@
+com/ve3globaltest/pages/LoginPage.class
+com/listeners/TestAllureListener.class
+com/ve3globaltest/pages/Homepage.class
+com/utils/ExcelUtil.class
+com/ve3globaltest/pages/CheckoutPage.class
+com/utils/FileUtil.class
+com/utils/WaitFor.class
+com/ve3globaltest/base/TestBase.class
+com/datadriventesting/DataProviders.class
+com/utils/ApplicationUtil.class
+com/ve3globaltest/pages/CartPage.class
